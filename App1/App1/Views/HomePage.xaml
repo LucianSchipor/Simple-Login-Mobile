@@ -5,7 +5,6 @@
              BackgroundColor="#112B47">
     <ContentPage.Content>
         <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Padding="20">
-            <Button Text="Inapoi" />
             <Label Text="Bine ați venit pe HomePage!"
                FontSize="Large"
                TextColor="CadetBlue"
