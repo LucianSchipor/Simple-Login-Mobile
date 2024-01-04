@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App1.MainPage"
+             x:Class="App1.LoginPage"
              BackgroundColor="#112B47">
     <ContentPage.Content>
 
@@ -13,12 +13,10 @@
                 VerticalOptions="Center"
                 Text="Login"
                 TextColor="White"
-                BorderColor="CadetBlue"
-                BackgroundColor="Transparent"
                 BorderWidth="1.5"
                 CornerRadius="50"
-                Clicked="OnLoginButtonClicked">
-                
+                Clicked="OnLoginButtonClicked"
+                BackgroundColor="CadetBlue">
             </Button>
             <Label HorizontalOptions="Center">
                 <Label.FormattedText>
