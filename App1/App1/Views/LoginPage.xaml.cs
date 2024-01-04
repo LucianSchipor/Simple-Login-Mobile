@@ -50,6 +50,8 @@ namespace App1
                         if (!string.IsNullOrEmpty(storedPassword) && storedPassword.Equals(loginPass))
                         {
                             DisplayAlert("OK", "Connected successfully.", "OK");
+                            Navigation.PushModalAsync(new NavigationPage(new HomePage()));
+
                         }
                         else
                         {
