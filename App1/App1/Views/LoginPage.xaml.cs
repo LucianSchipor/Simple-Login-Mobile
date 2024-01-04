@@ -26,6 +26,7 @@ namespace App1
             string serverName = "192.168.0.106";
             string serverusername = "lucian";
             string serverpassword = "1234";
+
             string constring = $"Data Source={serverName};Initial Catalog={serverDatabaseName};User ID={serverusername};Password={serverpassword};Connect Timeout=30;";
 
             using (SqlConnection con = new SqlConnection(constring))
@@ -48,11 +49,11 @@ namespace App1
                         // Verifică rezultatul
                         if (!string.IsNullOrEmpty(storedPassword) && storedPassword.Equals(loginPass))
                         {
-                            DisplayAlert("OK", "Utilizator conectat cu succes.", "OK");
+                            DisplayAlert("OK", "Connected successfully.", "OK");
                         }
                         else
                         {
-                            DisplayAlert("OK", "Numele de utilizator sau parola incorecte.", "OK");
+                            DisplayAlert("OK", "Username or password incorrect.", "OK");
                         }
                     }
                 }
@@ -65,7 +66,7 @@ namespace App1
 
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-
+            Navigation.PushModalAsync(new NavigationPage(new RegisterPage()));
         }
     }
 }

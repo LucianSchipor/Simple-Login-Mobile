@@ -3,10 +3,26 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.Views.RegisterPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+
+        <StackLayout VerticalOptions="Center" HorizontalOptions="FillAndExpand" Padding="20" IsClippedToBounds="True">
+            <Entry x:Name="entryUsername" PlaceholderColor="Gray" TextColor="Black" Placeholder="Username" HorizontalOptions="Center" />
+            <Entry x:Name="entryPassword" PlaceholderColor="Gray" TextColor="Black" Placeholder="Password" IsPassword="True" HorizontalOptions="Center" />
+
+            <Button
+            VerticalOptions="Center"
+            Text="Sign Up"
+            TextColor="Black"
+            BorderWidth="1.5"
+            CornerRadius="50"
+            Clicked="OnRegisterButtonClicked"
+            BackgroundColor="CadetBlue">
+            </Button>
+            <Label HorizontalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
